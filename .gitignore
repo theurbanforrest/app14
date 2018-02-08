@@ -1,3 +1,14 @@
+# Added by theUrbanForrest to ignore everything except src, package.json, and README.md
+_tests_
+android
+ios
+app.json
+index.android.js
+index.ios.js
+
+
+
+
 # Most part of this file is created by https://www.gitignore.io
 
 ### Node ###
