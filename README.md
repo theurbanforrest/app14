@@ -2,21 +2,22 @@
 React Native app + Redux, test prototype for theUrbanForrest
 
 ## how to build - iOS only
-1) Execute npm install
-2) Execute npm link
+This is a little hacky, needs to be improved:
 
-3) In file index.ios.js, replace with:
+1) In new folder, run react-native init app14
 
-'use strict'
+In this new app14 directory:
 
-import { AppRegistry } from 'react-native'
-import Main from './src'
-AppRegistry.registerComponent('app14', () => Main)
+2) Add src from this repo
+3) Replace package.json and index.ios.js from this repo
 
-4) In XCode, add to app14 > Info.plist:
+4) Run react-native install
+5) Run react-native link
+
+6) Open app14.xcodeproj, add to app14 > Info.plist:
 
 - NSPhotoLibraryUsageDescription : "Needed for react-native-photo-upload"
 - NSCameraUsageDescription : "Needed for react-native-photo-upload"
 - NSMicrophoneUsageDescription : "Needed for react-native-photo-upload"
 
-4) Execute react-native run-ios
+7) Run react-native run-ios
